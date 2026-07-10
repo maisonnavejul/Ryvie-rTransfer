@@ -1,16 +1,20 @@
 # Ryvie-rTransfer 🐧
 
-> **Fork de [Pingvin Share](https://github.com/stonith404/pingvin-share)** - Une plateforme de partage de fichiers auto-hébergée, simple et sécurisée.
+**English** · [Français](README.fr.md)
 
-## À propos
+> Part of the [Ryvie](https://github.com/ryvieos/Ryvie) ecosystem, the self-hosted personal cloud OS. Learn more at [ryvie.fr](https://ryvie.fr).
 
-Ryvie-rTransfer est un fork personnalisé de Pingvin Share avec des améliorations spécifiques :
-- Authentification LDAP avec mot de passe sécurisé via variables d'environnement
-- Configuration de développement optimisée avec hot reload
-- Redirection automatique vers la page de connexion
-- Interface de connexion améliorée avec indicateur de chargement
+> **Fork of [Pingvin Share](https://github.com/stonith404/pingvin-share)** - A self-hosted, simple and secure file sharing platform for your personal cloud.
 
-## Démarrage rapide
+## About
+
+Ryvie-rTransfer is a customized fork of Pingvin Share with specific improvements:
+- LDAP authentication with a secure password via environment variables
+- Optimized development configuration with hot reload
+- Automatic redirect to the login page
+- Improved login interface with a loading indicator
+
+## Quick start
 
 ### Production (Docker Compose)
 
@@ -18,11 +22,11 @@ Ryvie-rTransfer est un fork personnalisé de Pingvin Share avec des amélioratio
 docker compose up -d
 ```
 
-L'application sera accessible sur `http://localhost:3011`
+The application will be accessible at `http://localhost:3011`
 
-### Développement (avec hot reload)
+### Development (with hot reload)
 
-Voir [README.dev.md](./README.dev.md) pour les instructions détaillées de développement.
+See [README.dev.md](./README.dev.md) for detailed development instructions.
 
 ```bash
 # Lancer l'environnement de développement
@@ -34,18 +38,18 @@ docker compose -f docker-compose.dev.yml up
 
 ## Configuration
 
-### Variables d'environnement
+### Environment variables
 
-Créer un fichier `.env` à la racine du projet :
+Create a `.env` file at the root of the project:
 
 ```env
 APP_URL=https://votre-domaine.fr
 LDAP_BIND_PASSWORD=votre_mot_de_passe_ldap
 ```
 
-### Configuration LDAP
+### LDAP configuration
 
-Éditer `config.yaml` pour configurer l'authentification LDAP :
+Edit `config.yaml` to configure LDAP authentication:
 
 ```yaml
 ldap:
@@ -57,7 +61,7 @@ ldap:
   searchQuery: (uid=%username%)
 ```
 
-## Installation locale (sans Docker)
+## Local installation (without Docker)
 
 ### Backend
 
@@ -80,13 +84,13 @@ npm run dev
 
 ## Documentation
 
-- [Guide de développement](./README.dev.md) - Configuration hot reload, limites CPU/RAM, etc.
-- [Documentation Pingvin Share](https://github.com/stonith404/pingvin-share) - Documentation du projet original
+- [Development guide](./README.dev.md) - Hot reload configuration, CPU/RAM limits, etc.
+- [Pingvin Share documentation](https://github.com/stonith404/pingvin-share) - Documentation of the original project
 
-## Crédits
+## Credits
 
-Ce projet est un fork de [Pingvin Share](https://github.com/stonith404/pingvin-share) créé par [stonith404](https://github.com/stonith404).
+This project is a fork of [Pingvin Share](https://github.com/stonith404/pingvin-share) created by [stonith404](https://github.com/stonith404).
 
-## Licence
+## License
 
-Voir le projet original [Pingvin Share](https://github.com/stonith404/pingvin-share) pour les informations de licence.
+See the original project [Pingvin Share](https://github.com/stonith404/pingvin-share) for license information.
