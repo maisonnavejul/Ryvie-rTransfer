@@ -37,6 +37,12 @@
     "sharp": "^0.33.5",
     "yup": "^1.4.0"
   },
+  "overrides": {
+    "serialize-javascript": ">=7.0.5",
+    "@next/eslint-plugin-next": {
+      "glob": ">=10.4.6"
+    }
+  },
   "devDependencies": {
     "@types/mime-types": "^2.1.4",
     "@types/node": "22.5.5",
